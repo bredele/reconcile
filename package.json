@@ -1,5 +1,5 @@
 {
-  "name": "reconcile",
+  "name": "@bredele/reconcile",
   "version": "1.0.0",
   "description": "Reconcile data from multiple async sources.",
   "main": "./dist/cjs/index.js",
@@ -11,10 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/bredele/reconcile.git"
   },
-  "keywords": [
-    "reconcile",
-    "data"
-  ],
+  "keywords": ["reconcile", "data"],
   "author": "Olivier Wietrich",
   "license": "MIT",
   "bugs": {
@@ -36,7 +33,8 @@
       "types": "./dist/types/index.d.ts"
     }
   },
-  "files": [
-    "dist"
-  ]
+  "files": ["dist"],
+  "publishConfig": {
+    "access": "public"
+  }
 }
