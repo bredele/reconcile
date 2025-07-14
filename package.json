@@ -1,0 +1,30 @@
+{
+  "name": "reconcile",
+  "version": "1.0.0",
+  "description": "Reconcile data from multiple async sources.",
+  "main": "dist/cjs/index.js",
+  "scripts": {
+    "test": "node --test dist/cjs/**/*.test.js",
+    "build": "cmplr --type-check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bredele/reconcile.git"
+  },
+  "keywords": [
+    "reconcile",
+    "data"
+  ],
+  "author": "Olivier Wietrich",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bredele/reconcile/issues"
+  },
+  "homepage": "https://github.com/bredele/reconcile#readme",
+  "dependencies": {
+    "cmplr": "^1.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.13"
+  }
+}
