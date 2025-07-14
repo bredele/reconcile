@@ -2,7 +2,7 @@
   "name": "reconcile",
   "version": "1.0.0",
   "description": "Reconcile data from multiple async sources.",
-  "main": "dist/cjs/index.js",
+  "main": "./dist/cjs/index.js",
   "scripts": {
     "test": "node --test dist/cjs/**/*.test.js",
     "build": "cmplr --type-check"
@@ -26,5 +26,17 @@
   },
   "devDependencies": {
     "@types/node": "^24.0.13"
-  }
+  },
+  "module": "./dist/esm/index.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "types": "./dist/types/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ]
 }
